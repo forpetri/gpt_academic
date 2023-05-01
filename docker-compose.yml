@@ -3,7 +3,7 @@ version: "3.8"
 services:
   academic:
     build: .
-    container_name: code-server
+    container_name: academic
     privileged: true
     tty: true
     stdin_open: true
