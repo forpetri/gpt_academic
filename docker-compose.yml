@@ -1,0 +1,15 @@
+---
+version: "3.8"
+services:
+  academic:
+    build: .
+    container_name: code-server
+    privileged: true
+    tty: true
+    stdin_open: true
+    user: root
+    ports:
+      - 80:80
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:false
